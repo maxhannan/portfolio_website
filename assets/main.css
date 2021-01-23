@@ -8,10 +8,10 @@ body {
 	line-height: 1.6;
 	margin: 0;
     min-height: 100vh;
-	background: rgb(255,154,24);
-	background: linear-gradient(176deg, rgba(255,154,24,1) 0%, rgba(228,148,233,1) 100%);
-    overflow-x: hidden;
+	background: rgb(0,0,0);
+	background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(130,127,127,1) 100%);
 }
+
 .section0{
 	height: 100vh;
 	width: auto;
@@ -48,9 +48,10 @@ a {
 
 .logo {
 	margin: 0;
-	height: 50px;
+	height: 60px;
 	box-sizing: border-box;
 	padding-bottom: 20px;
+	opacity: 90%;
 }
 
 .main-nav {
@@ -63,21 +64,20 @@ a {
 	font-weight: lighter;
 	text-align: center;
 	display: block;
+	
 }
 
 .main-nav a {
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	opacity: 100% !important;
 	
 }
 
 .main-nav a:hover {
-	background-color:black;
-	border-radius: 10px;
+	font-weight: 500;
+	background-color: black;	
 	color: white;
-    
-	
 	
 }
 
@@ -89,10 +89,32 @@ a {
 	background-color: black;
 	opacity: 50%;
 	box-shadow: 0px 5px 2px 1px rgba(0, 0, 0, .1);
+	padding-right: 3%;
+	padding-left: 2%;
    
 }
+.header:hover {
+	opacity:95%;
+}
+
+.contentbox{
+
+	display: grid;
+	max-height: 90%;
+	margin-top: 10%;
+	justify-items: center;
+	max-width: 100%;
+	
 
 
+	
+}
+.imgcontent{
+	align-self: center;
+	max-width: 30%;
+	filter: drop-shadow(0 0 0.75rem black);
+	z-index: -1;
+}
 
 /* ================================= 
   Media Queries
@@ -113,8 +135,10 @@ a {
 		width: 80%;
 		margin: 0 auto;
 		max-width: 1150px;
+		margin-bottom: 20%;
 	}
 	}
+
 
 }
 
@@ -122,6 +146,7 @@ a {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
+		
 	}
 
 }
