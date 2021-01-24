@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface:900|Work+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i&display=swap');
 * {
 	box-sizing: border-box;
 }
@@ -8,8 +9,7 @@ body {
 	line-height: 1.6;
 	margin: 0;
     min-height: 100vh;
-	background: rgb(172,96,255);
-	background: linear-gradient(90deg, rgba(172,96,255,1) 35%, rgba(101,229,255,1) 100%);
+	background-color: white;
 }
 .grid {
 	/* Grid Fallback */
@@ -27,7 +27,7 @@ body {
   
 .module {
 	/* Demo-Specific Styles */
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255, 255, 255, 0.2);
 	opacity: 50%;
 	display: flex;
 	align-items: center;
@@ -70,11 +70,14 @@ body {
 
 .section{
 	height: 100vh;
+	background-image:url(whitewave.png);
+	background-size: 100%;
 
 	
 }
 .section2{
 	height: 100vh;
+	
 
 }
 .section3{
@@ -116,17 +119,20 @@ a {
 }
 
 .main-nav a {
-	color: black;
+	font-family: 'Chivo', sans-serif;
+
+	font-weight: 700;
 	font-size: 1.5em;
-	opacity: 100% !important;
+	color: rgb(38, 38, 38);
+	
 	
 }
 
 .main-nav a:hover {
-	font-weight: 500;
+	
 	background-color: black;	
 	color: white;
-	font-style: oblique;
+	font-style: italic;
 	
 }
 
@@ -135,34 +141,69 @@ a {
 	padding-bottom: .5em;
     position: fixed;
 	width: 100%;
-	background-color: white;
-	opacity: 50%;
+	
+	
 	
 	padding-right: 3%;
 	padding-left: 2%;
    
 }
 .header:hover {
-	opacity:55%;
+	
 }
 
 .contentbox{
 
-	display: grid;
-	height: 100vh;
+	display: flex;
+	height: 75vh;
+	overflow-y:hidden;
 	
 	justify-items: center;
 	max-width: 100%;
-	
+	z-index: -1;
 
 
 	
 }
-.imgcontent{
-	align-self: center;
-	max-width: 80vw;
+.titlecard{
+	height: 25vh;
+	background-color: white;
+	display: flex;
+	justify-content:space-evenly;
+}
+#title{
+	font-size: 7vw;
+	align-self:flex-start;
 	
-	z-index: 0;
+	max-width: 40vw;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 900;
+
+	color: rgb(38, 38, 38);
+	text-align: left;
+	align-self: center;
+	
+	
+}
+
+#content{
+	max-width: 40vw;
+	font-family: 'Chivo', sans-serif;
+	font-weight: 300;
+	font-size: 1.5vw;
+	padding-top: 1%;
+	text-align: left;
+	align-self: center;
+	color: rgb(38, 38, 38);
+	
+}
+
+.imgcontent{
+	align-self:flex-end;	
+	width: 100%;
+	
+	z-index: -1;
 }
 
 /* ================================= 
