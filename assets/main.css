@@ -29,6 +29,7 @@ body {
 	margin: 0;
     min-height: 100vh;
 	background-color: #fffaf0;
+
 }
 .grid {	
 	/* Supports Grid */
@@ -145,18 +146,19 @@ a {
 }
 
 .titlecard{
-	max-height: 25vh;
-	background-color: #fffaf0;
+	max-height: 35vh;
+	background-color: transparent;
 	display: flex;
 	justify-content:space-evenly;
 	align-content: center;
+
 }
 
 
 #title{
-	font-size: 6vw;
+	font-size: 8.7vw;
 	align-self: center;
-	max-width: 40vw;
+	max-width: 60vw;
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
 	font-weight: 900;
@@ -215,7 +217,7 @@ a {
 		margin-bottom: 20%;
 	}
 	}
-
+	
 
 }
 @media (max-width: 769px) {
@@ -230,8 +232,32 @@ a {
 		grid-auto-rows: minmax(150px, auto);
 		padding-top:100px;
 }
-
-
+.about{
+	flex-direction: column-reverse;
+	justify-content: center;
+	padding-top: 15% ;
+}
+.abouttext{
+	font-size: 2.5vw !important;
+}
+.aboutcontent{
+	max-width: 80% !important;
+}
+.aboutimage{
+	width: 45vw !important;
+}
+.titlecard{
+	flex-direction: column;
+}
+#title{
+	max-width: 80vw;
+	padding-top: 5%;
+	padding-bottom: 1%;
+}
+#content{
+	max-width: 95vw;
+	font-size: 2.9vw;
+}
 }
 @media (max-width: 1025px) {
 	.grid {
